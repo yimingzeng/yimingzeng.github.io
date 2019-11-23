@@ -22,7 +22,7 @@
   var CONFIG = {
     hostname: new URL('https://yimingzeng.github.io').hostname,
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Gemini',
     version: '7.5.0',
     exturl: false,
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
@@ -136,6 +136,11 @@
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
 
   </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
         <li class="menu-item menu-item-tags">
 
     <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
@@ -177,64 +182,6 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://yimingzeng.github.io/2019/11/23/2019-11-20-%E5%85%B1%E4%BA%AB%E5%86%85%E5%AD%98/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/touxiang.jpg">
-      <meta itemprop="name" content="yiming">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="yiming">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/11/23/2019-11-20-%E5%85%B1%E4%BA%AB%E5%86%85%E5%AD%98/" class="post-title-link" itemprop="url">2019-11-20-共享内存</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2019-11-23 17:54:49 / 修改时间：18:49:29" itemprop="dateCreated datePublished" datetime="2019-11-23T17:54:49+08:00">2019-11-23</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://yimingzeng.github.io/2019/11/22/2019-11-22-Hibernate%E6%A1%86%E6%9E%B6day01%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -266,8 +213,19 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-23 18:34:11" itemprop="dateModified" datetime="2019-11-23T18:34:11+08:00">2019-11-23</time>
+                <time title="修改时间：2019-11-23 20:07:42" itemprop="dateModified" datetime="2019-11-23T20:07:42+08:00">2019-11-23</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hibernate%E6%A1%86%E6%9E%B6/" itemprop="url" rel="index">
+                    <span itemprop="name">Hibernate框架</span>
+                  </a>
+                </span>
+            </span>
 
           
 
@@ -280,7 +238,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          学习笔记
+          1.框架是用来提高开发效率的2.封装了好了一些功能.我们需要使用这些功能时,调用即可.不需要再手动实现.3.所以框架可以理解成是一个半成品的项目.只要懂得如何驾驭这些功能即可.
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2019/11/22/2019-11-22-Hibernate%E6%A1%86%E6%9E%B6day01%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
@@ -338,7 +296,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-23 18:34:08" itemprop="dateModified" datetime="2019-11-23T18:34:08+08:00">2019-11-23</time>
+                <time title="修改时间：2019-11-23 19:08:48" itemprop="dateModified" datetime="2019-11-23T19:08:48+08:00">2019-11-23</time>
               </span>
 
           
@@ -352,10 +310,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          学习笔记
+          <h3 id="structs2使用优势"><a href="#structs2使用优势" class="headerlink" title="structs2使用优势"></a>structs2使用优势</h3><ul>
+<li>自封装参数</li>
+<li>参数校验</li>
+<li>结果的处理（转发|重定向）</li>
+<li>国际化
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/11/22/2019-11-22-struts2day01/">
+              <a class="btn" href="/2019/11/22/2019-11-22-struts2day01/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -410,8 +372,19 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-23 18:34:12" itemprop="dateModified" datetime="2019-11-23T18:34:12+08:00">2019-11-23</time>
+                <time title="修改时间：2019-11-23 20:07:24" itemprop="dateModified" datetime="2019-11-23T20:07:24+08:00">2019-11-23</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index">
+                    <span itemprop="name">理论学习</span>
+                  </a>
+                </span>
+            </span>
 
           
 
@@ -424,10 +397,95 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          很多格式错误请见谅
+          <h3 id="一、填空题"><a href="#一、填空题" class="headerlink" title="一、填空题"></a>一、填空题</h3><p>1 中国共产党人的初心和使命是_____（为中国人民谋幸福，为中华民族谋复兴）</p>
+<p>2 “不忘初心、牢记使命”主题教育以_____为重点，在全党开展。（县处级以上领导干部）</p>
+<p>3 开展“不忘初心、牢记使命”主题教育是要把<strong><strong><em>、</em></strong></strong>、_  <strong>、___</strong>贯穿全过程。（学习教育、调查研究、检视问题、整改落实）</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2019/11/21/2019-11-21-%E4%B8%8D%E5%BF%98%E5%88%9D%E5%BF%83%E7%89%A2%E8%AE%B0%E4%BD%BF%E5%91%BD/">
+              <a class="btn" href="/2019/11/21/2019-11-21-%E4%B8%8D%E5%BF%98%E5%88%9D%E5%BF%83%E7%89%A2%E8%AE%B0%E4%BD%BF%E5%91%BD/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://yimingzeng.github.io/2019/11/20/2019-11-20-%E5%85%B1%E4%BA%AB%E5%86%85%E5%AD%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/touxiang.jpg">
+      <meta itemprop="name" content="yiming">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yiming">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/20/2019-11-20-%E5%85%B1%E4%BA%AB%E5%86%85%E5%AD%98/" class="post-title-link" itemprop="url">嵌入式实验4_共享内存</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-11-20 10:00:00" itemprop="dateCreated datePublished" datetime="2019-11-20T10:00:00+08:00">2019-11-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-11-23 20:06:21" itemprop="dateModified" datetime="2019-11-23T20:06:21+08:00">2019-11-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          上课需要的代码 ,下载使用即可
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/11/20/2019-11-20-%E5%85%B1%E4%BA%AB%E5%86%85%E5%AD%98/">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -642,6 +700,18 @@
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
   </nav>
 </div>
   <div class="feed-link motion-element">
@@ -678,7 +748,7 @@
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.5.0
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.5.0
   </div>
 
         
@@ -726,5 +796,5 @@
 
   
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>
